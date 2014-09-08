@@ -1,0 +1,119 @@
+   Welcome!
+   ========
+
+   Are you sorry because you can't find any games for your eComStation Box? Why not
+   create a game yourself? Here comes a set of tools, which helps you creating your
+   own OS-independent game!
+
+
+
+				ScummC v0.2.0
+
+                           A Scumm Compiler
+
+
+
+   This is the full featured OS/2 port of version 0.2.0 of ScummC, the Scumm compiler.
+   Two of the 15 supplied tools are meant to be run on XFree86/OS2 because the
+   Gtk Toolkit is needed. All other tools are running fine in a Os/2 Commandline
+   session or a xterm console under XFree/OS2.
+
+
+
+   Requirements for the binary distribution:
+   =========================================
+
+   XFree86-4.50 and the latest fixes for libXft and libfreetype:
+   ftp://ftp.netlabs.org/pub/xfree86/4.5.0
+   ftp://ftp.netlabs.org/pub/xfree86/4.5.0/fixes
+
+   Libraries:
+
+   fontconfig-2.3.2
+   gettext-runtime-0.14.5
+   Libpng-1.0.18
+   Glib-2.6.5
+   Atk v1.9.0
+   Pango v1.8.1
+   Gtk-2.0 v2.6.8
+   SDL-1.2
+   jpeg6b, tiff34
+
+   All Packages exept the SDL-1.2 are available at hobbes. The SDL can be found
+   at NeTlAbS.
+
+
+   
+   Installation:
+   =============
+
+   If you haven't already done so, install XFree86/OS2 4.5.0 and make sure it
+   works. This is described elsewhere. I good howto you can read at
+   http://www.os2world.com/os2files/xfree86/installation_v4.html
+
+   Copy the XFree/OS2 fixes libXft and libfreetype over the installation.
+
+   Replace fontconfig included in XFree86 with fontconfig v2.3.2 by copying it
+   over the XFree86 installation. Edit the file /etc/fonts/fonts.conf so the
+   font directory list has the directories you want (including drive letters).
+   Then, run 'fc-cache -f -v'.
+
+   Unpack the remaining packages from the list above on the X11ROOT drive. Add
+   /usr/bin to your PATH and /usr/lib to your LIBPATH.
+
+   Run the following commands:
+      
+     pango-querymodules > %X11ROOT%\etc\pango\pango.modules
+     gdk-pixbuf-query-loaders > %X11ROOT%\etc\gtk-2.0\gdk-pixbuf.loaders
+     gtk-query-immodules-2.0 > %X11ROOT%\etc\gtk-2.0\gtk.immodules
+
+    
+   Copy gcc303m.dll and the SDL libraries to a directory which is in
+   your libpath.
+
+   For the rest of ScummC's files create a directory of your choice.
+
+   Launch XFree86/OS2 and explore the 15 tools in a terminal.
+
+
+   Compiling the sources from scratch:
+   ===================================
+
+   First you need additional packages:-) Here they are:
+
+     gettext-tools-0.14.5
+     EMX 0.9d
+     GCC-3.03
+     Gnu Make-3.8.1
+     pango-1.8.1
+     bison-2.1
+     doxygen-1.2.11
+     readline-4.1
+     sed-3.02-R2
+
+   All Packages exept the GCC-3.03 are available at hobbes. The
+   GCC can be downloaded at NeTlAbS.
+   GCC-3.03 is a strict requirement. No newer gcc is working.
+   To create the binaries simply copy all files under SRC in a directory
+   of your choice and type 'make'.
+   The original sources can be downloaded from the ScummC Project site
+   (see Readme).
+
+
+
+   Additional Info on ScummC:
+   ==========================
+
+   http://alban.dotsec.net/Projects/ScummC
+
+
+
+   Thanks:
+   =======
+
+   Many thanks to: Alban Bedel, Frank Giessler
+
+
+   Have a nice screen!
+
+   Frank Ambacher (anakor@snafu.de)

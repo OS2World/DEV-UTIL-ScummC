@@ -1,0 +1,25 @@
+                          Upload Information Template for Hobbes.nmsu.edu
+                          ===============================================
+
+        Archive Filename: scummC-0.2.0-os2.zip
+       Short Description: The Scumm Compiler w. src
+        Long Description: ScummC is a set of tools allowing to create SCUMM games from scratch.(GPL)
+
+      Proposed directory
+           for placement: /pub/os2/dev
+
+               Your name: Frank Ambacher
+           Email address: 
+    Program contact name: (same)
+   Program contact email: (same)
+             Program URL: (none) 
+
+      Would you like the
+   contact email address
+    included in listings? no
+
+Operating System/Version: OS/2 Warp 4/eComStation
+ Additional requirements: XFree86/OS2,Gtk,ATK,Pango
+
+                Replaces: (none)
+
